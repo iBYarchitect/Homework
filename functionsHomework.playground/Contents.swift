@@ -2,106 +2,92 @@ import Foundation
 
 //MARK: - Choose min between 2 Int
 
-func minOfTwo(_ num1: Int, _ num2: Int) -> Int {
-    if num1 < num2 {
-        return num1
-    } else {
-        return num2
-    }
+func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
+    return (number1 < number2 ? number1 : number2)
 }
 
-minOfTwo(-4, -5)
+assert(minimumOfTwo(1, 2) == 1)
 
 //MARK: - Choose max between 2 Int
 
-func maxOfTwo(_ num1: Int, _ num2: Int) -> Int {
-    if num1 > num2 {
-        return num1
-    } else {
-        return num2
-    }
+func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
+    return (number1 > number2 ? number1 : number2)
 }
 
-maxOfTwo(-4, -5)
+assert(maximumOfTwo(1, 2) == 2)
 
 //MARK: - Choose min between 3 Int
 
-func minOfThree(_ num1: Int,_ num2: Int,_ num3: Int) -> Int {
-        var lesserOfThree: Int
-        lesserOfThree = minOfTwo(num3, minOfTwo(num1, num2))
-        return lesserOfThree
-    }
+func minimumOfThree(_ number1: Int,_ number2: Int,_ number3: Int) -> Int {
+    return minimumOfTwo(number3, minimumOfTwo(number1, number2))
+}
 
-minOfThree(1, 2, 3)
+assert(minimumOfThree(1, 2, 3) == 1)
 
 //MARK: - Choose max between 3 Int
 
-func maxOfThree(_ num1: Int,_ num2: Int,_ num3: Int) -> Int {
-        var greaterOfThree: Int
-        greaterOfThree = maxOfTwo(num3, maxOfTwo(num1, num2))
-        return greaterOfThree
-    }
+func maximumOfThree(_ number1: Int,_ number2: Int,_ number3: Int) -> Int {
+    return maximumOfTwo(number3, maximumOfTwo(number1, number2))
+}
 
-maxOfThree(1, 2, 3)
+assert(maximumOfThree(1, 2, 3) == 3)
 
 //MARK: - Find min in array of Ints
 
-func minNumInArrInt(_ array: [Int]) -> Int? {
-    if array.isEmpty { return nil }
-    var minNum = array[0]
+func minimumNumberInArrayOfInt(_ array: [Int]) -> Int? {
+    var minimumNumber = array.first
     for item in array {
-        if item < minNum {
-            minNum = item
+        if item < minimumNumber! {
+            minimumNumber = item
         }
     }
-    return minNum
+    
+    return minimumNumber
 }
 
-minNumInArrInt([-2, 2, 2, -2])
+assert(minimumNumberInArrayOfInt([]) == nil)
 
 //MARK: - Find max in array of Ints
 
-func maxNumInArrInt(_ array: [Int]) -> Int? {
-    if array.isEmpty { return nil }
-    var maxNum = array[0]
+func maximumNumberInArrayOfInt(_ array: [Int]) -> Int? {
+    var maximumNumber = array.first
     for item in array {
-        if (item > maxNum) {
-            maxNum = item
+        if item > maximumNumber! {
+            maximumNumber = item
         }
     }
-    return maxNum
+    
+    return maximumNumber
 }
 
-maxNumInArrInt([1, 2, 3])
+assert(maximumNumberInArrayOfInt([1,2,3]) == 3)
 
 //MARK: - Find min in array of Doubles
 
-func minNumInArrDouble(_ array: [Double]) -> Double? {
-    if array.isEmpty {return nil}
-    var minNum = array[0]
+func minimumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
+    var minimumNumber = array.first
     for item in array {
-        if (item < minNum) {
-            minNum = item
+        if item < minimumNumber! {
+            minimumNumber = item
         }
     }
-    return minNum
+    
+    return minimumNumber
 }
 
-minNumInArrDouble([3.564, 3.232, 3.123, 3.732, 4])
+assert(minimumNumberInArrayOfDouble([3.1, 3.2, 3.3, 3.4, 4]) == 3.1)
 
 //MARK: - Find max in array of Doubles
 
-func maxNumInArrDouble(_ array: [Double]) -> Double? {
-    if array.isEmpty {return nil}
-    var maxNum = array[0]
+func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
+    var maximumNumber = array.first
     for item in array {
-        if (item > maxNum) {
-            maxNum = item
+        if item > maximumNumber! {
+            maximumNumber = item
         }
     }
-    return maxNum
+    
+    return maximumNumber
 }
 
-maxNumInArrDouble([3.564, 3.232, 3.123, 3.732, 4])
-
-
+assert(maximumNumberInArrayOfDouble([]) == nil)

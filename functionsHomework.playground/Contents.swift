@@ -9,7 +9,7 @@ func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
 assert(minimumOfTwo(1, 2) == 1)
 assert(minimumOfTwo(-2, 2) == -2)
 assert(minimumOfTwo(0, 0) == 0)
-assert(minimumOfTwo(Int(Int64.min), Int(Int64.min)) == Int(Int64.min))
+assert(minimumOfTwo(Int.min, Int.min) == Int.min)
 
 // MARK: - Choose max between 2 Int
 
@@ -20,7 +20,7 @@ func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
 assert(maximumOfTwo(1, 2) == 2)
 assert(maximumOfTwo(-2, 2) == 2)
 assert(maximumOfTwo(0, 0) == 0)
-assert(maximumOfTwo(Int(Int64.max), Int(Int64.max)) == Int(Int64.max))
+assert(maximumOfTwo(Int.max, Int.max) == Int.max)
 
 // MARK: - Choose min between 3 Int
 
@@ -50,10 +50,9 @@ func minimumNumberInArrayOfInt(_ array: [Int]) -> Int? {
     guard var minimumNumber = array.first else {
         return nil
     }
+    
     for item in array {
-        if item < minimumNumber {
-            minimumNumber = item
-        }
+        minimumNumber = minimumOfTwo(item, minimumNumber)
     }
     
     return minimumNumber
@@ -71,10 +70,9 @@ func maximumNumberInArrayOfInt(_ array: [Int]) -> Int? {
     guard var maximumNumber = array.first else {
         return nil
     }
+    
     for item in array {
-        if item > maximumNumber {
-            maximumNumber = item
-        }
+        maximumNumber = maximumOfTwo(item, maximumNumber)
     }
     
     return maximumNumber
@@ -92,6 +90,7 @@ func minimumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
     guard var minimumNumber = array.first else {
         return nil
     }
+    
     for item in array {
         if item < minimumNumber {
             minimumNumber = item
@@ -115,6 +114,7 @@ func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
     guard var maximumNumber = array.first else {
         return nil
     }
+    
     for item in array {
         if item > maximumNumber {
             maximumNumber = item

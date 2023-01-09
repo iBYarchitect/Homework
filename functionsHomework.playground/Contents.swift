@@ -1,3 +1,5 @@
+import XCTest
+
 // MARK: - Choose min between 2 Int
 
 func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {

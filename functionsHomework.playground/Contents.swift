@@ -13,17 +13,17 @@ class MinimumOfTwoTests: XCTestCase {
     func testFindMinValueReturnsMinValueWhenGiveTwoPositiveNumbers() {
         XCTAssertEqual(minimumOfTwo(1, 2), 1)
     }
-    
+
     /// Test case for situation with input of one positive and one negative Int value.
     func testFindMinValueReturnsMinValueWhenGiveOneNegavtiveAndOnePositiveNumber() {
         XCTAssertEqual(minimumOfTwo(-2, 2), -2)
     }
-    
+
     /// Test case for situation with input of two zero values.
     func testFindMinValueReturnsMinValueWhenGiveTwoZeros() {
         XCTAssertEqual(minimumOfTwo(0, 0), 0)
     }
-    
+
     /// Test case for situation with input of two minimum representable integer values.
     func testFindMinValueReturnsMinValueWhenGiveTwoIntMinNumbers() {
         XCTAssertEqual(minimumOfTwo(Int.min, Int.min), Int.min)

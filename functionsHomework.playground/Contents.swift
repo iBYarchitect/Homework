@@ -99,3 +99,49 @@ assert(maximumNumberInArrayOfInt([]) == nil)
 assert(maximumNumberInArrayOfInt([2]) == 2)
 assert(maximumNumberInArrayOfInt([0, 0, 0]) == 0)
 assert(maximumNumberInArrayOfInt([-2, 2]) == 2)
+
+// MARK: - Find min in array of Doubles
+func minimumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
+    guard var minimumNumber = array.first else {
+        return nil
+    }
+    
+    for item in array {
+        if item < minimumNumber {
+            minimumNumber = item
+        }
+    }
+    
+    return minimumNumber
+}
+
+assert(minimumNumberInArrayOfDouble([3.1, 3.2, 4]) == 3.1)
+assert(minimumNumberInArrayOfDouble([3.1, 3.2, 4.4]) == 3.1)
+assert(minimumNumberInArrayOfDouble([3.33, 3.32, 3.31]) == 3.31)
+assert(minimumNumberInArrayOfDouble([]) == nil)
+assert(minimumNumberInArrayOfDouble([2.1]) == 2.1)
+assert(minimumNumberInArrayOfDouble([0, 0, 0]) == 0)
+assert(minimumNumberInArrayOfDouble([3, 4, 5]) == 3)
+
+// MARK: - Find max in array of Doubles
+func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
+    guard var maximumNumber = array.first else {
+        return nil
+    }
+    
+    for item in array {
+        if item > maximumNumber {
+            maximumNumber = item
+        }
+    }
+    
+    return maximumNumber
+}
+
+assert(maximumNumberInArrayOfDouble([3.1, 3.2, 4]) == 4)
+assert(maximumNumberInArrayOfDouble([3.1, 3.2, 4.4]) == 4.4)
+assert(maximumNumberInArrayOfDouble([3.33, 3.32, 3.31]) == 3.33)
+assert(maximumNumberInArrayOfDouble([]) == nil)
+assert(maximumNumberInArrayOfDouble([2.1]) == 2.1)
+assert(maximumNumberInArrayOfDouble([0, 0, 0]) == 0)
+assert(maximumNumberInArrayOfDouble([3, 4, 5]) == 5)

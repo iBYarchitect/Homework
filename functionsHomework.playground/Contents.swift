@@ -68,27 +68,27 @@ func minimumNumberInArrayOfInt(_ array: [Int]) -> Int? {
 
 class MinimumNumberInArrayOfIntTests: XCTestCase {
     /// Test case for situation with input of positive array Int with three values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfPositiveInt() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfPositiveInt() {
         XCTAssertEqual(minimumNumberInArrayOfInt([3, 2, 1]), 1)
     }
 
     /// Test case for situation with input of nil.
-    func testFindMinValueReturnsMinValueWhenGiveNil() {
+    func testFindMinValueReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(minimumNumberInArrayOfInt([]), nil)
     }
 
     /// Test case for situation with input of positive array Int with one value.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithOnePositiveNumber() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
         XCTAssertEqual(minimumNumberInArrayOfInt([2]), 2)
     }
 
     /// Test case for situation with input of array Int with three zeros.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithThreeZeros() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithThreeZeros() {
         XCTAssertEqual(minimumNumberInArrayOfInt([0, 0, 0]), 0)
     }
 
     /// Test case for situation with input of array Int with one positive and one negative values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithPositiveAndNegativeValue() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
         XCTAssertEqual(minimumNumberInArrayOfInt([-2, 2]), -2)
     }
 }
@@ -123,27 +123,27 @@ func maximumNumberInArrayOfInt(_ array: [Int]) -> Int? {
 
 class MaximumNumberInArrayOfIntTests: XCTestCase {
     /// Test case for situation with input of positive array Int with three values.
-    func testFindMaxValueReturnsMinValueWhenGiveArrayOfPositiveInt() {
+    func testFindMaxValueReturnsMinValueWhenGivenArrayOfPositiveInt() {
         XCTAssertEqual(maximumNumberInArrayOfInt([3, 2, 1]), 3)
     }
 
     /// Test case for situation with input of nil.
-    func testFindMaxValueReturnsMinValueWhenGiveNil() {
+    func testFindMaxValueReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(maximumNumberInArrayOfInt([]), nil)
     }
 
     /// Test case for situation with input of positive array Int with one value.
-    func testFindMaxValueReturnsMinValueWhenGiveArrayWithOnePositiveNumber() {
+    func testFindMaxValueReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
         XCTAssertEqual(maximumNumberInArrayOfInt([2]), 2)
     }
 
     /// Test case for situation with input of array Int with three zeros.
-    func testFindMaxValueReturnsMinValueWhenGiveArrayWithThreeZeros() {
+    func testFindMaxValueReturnsMinValueWhenGivenArrayWithThreeZeros() {
         XCTAssertEqual(maximumNumberInArrayOfInt([0, 0, 0]), 0)
     }
 
     /// Test case for situation with input of array Int with one positive and one negative values.
-    func testFindMaxValueReturnsMinValueWhenGiveArrayWithPositiveAndNegativeValue() {
+    func testFindMaxValueReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
         XCTAssertEqual(maximumNumberInArrayOfInt([-2, 2]), 2)
     }
 }
@@ -185,27 +185,27 @@ class MinimumNumberInArrayOfDoubleTests: XCTestCase {
     }
 
     /// Test case for situation with input positive array of Double with two Double and one Int values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfThreePositiveDoubleValues() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([3.1, 3.2, 4.4]), 3.1)
     }
 
     /// Test case for situation with input of nil.
-    func testFindMinValueReturnsMinValueWhenGiveNil() {
+    func testFindMinValueReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([]), nil)
     }
 
     /// Test case for situation with input of array Double with three zeros.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithThreeZeroValues() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([0, 0, 0]), 0)
     }
 
     /// Test case for situation with input of positive array Double with one value.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithOnePositiveDoubleValue() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([2.1]), 2.1)
     }
 
     /// Test case for situation with input of positive array Double with three positive Int values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfThreePositiveInt() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfThreePositiveInt() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([3, 4, 5]), 3)
     }
 }
@@ -242,32 +242,32 @@ func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
 
 class MaximumNumberInArrayOfDoubleTests: XCTestCase {
     /// Test case for situation with input positive array of Double with two Double and one Int values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfTwoPositiveDoublesAndOneIntValues() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfTwoPositiveDoublesAndOneIntValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3.1, 3.2, 4]), 3.1)
     }
 
     /// Test case for situation with input positive array of Double with two Double and one Int values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfThreePositiveDoubleValues() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3.1, 3.2, 4.4]), 3.1)
     }
 
     /// Test case for situation with input of nil.
-    func testFindMinValueReturnsMinValueWhenGiveNil() {
+    func testFindMinValueReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([]), nil)
     }
 
     /// Test case for situation with input of array Double with three zeros.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithThreeZeroValues() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([0, 0, 0]), 0)
     }
 
     /// Test case for situation with input of positive array Double with one value.
-    func testFindMinValueReturnsMinValueWhenGiveArrayWithOnePositiveDoubleValue() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([2.1]), 2.1)
     }
 
     /// Test case for situation with input of positive array Double with three positive Int values.
-    func testFindMinValueReturnsMinValueWhenGiveArrayOfThreePositiveInt() {
+    func testFindMinValueReturnsMinValueWhenGivenArrayOfThreePositiveInt() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3, 4, 5]), 3)
     }
 }

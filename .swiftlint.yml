@@ -1,0 +1,2 @@
+identifier_name:
+    excluded: ["id", "a", "b", "c", "i", "j", "x", "y", "z"]

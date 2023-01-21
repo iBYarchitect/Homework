@@ -3,44 +3,49 @@ import XCTest
 // MARK: - Choose min between 2 Int
 
 /**
-    This function chooses minimum value between two Int.
+ Returns the lesser value of two integer numbers.
  
-    You can find minimum value of Int from input two Int values by calling this function.
+ You can find minimum value of Int from input two Int values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
  
-    - Parameter number1: Int value.
-    - Parameter number2: Int value.
+ - Returns: The lesser of two given integer values. If the values are equal, returns the second one.
  
-    - Returns: Returns minimum Int value from input of two Int values. In case when function have same values on the input, number2 is returned.
- 
-    */
+*/
 func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 < number2) ? number1 : number2
    
 }
 
 class MinimumOfTwoTests: XCTestCase {
-    /// Test case for situation with input of two positive Int values.
-    func testFindMinValueReturnsMinValueWhenGivenTwoPositiveNumbers() {
+    func testMinimumOfTwoReturnsMinValueWhenGivenTwoPositiveNumbers() {
         XCTAssertEqual(minimumOfTwo(1, 2), 1)
     }
 
-    /// Test case for situation with input of one positive and one negative Int value.
-    func testFindMinValueReturnsMinValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
+    func testMinimumOfTwoReturnsMinValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
         XCTAssertEqual(minimumOfTwo(-2, 2), -2)
     }
 
-    /// Test case for situation with input of two zero values.
-    func testFindMinValueReturnsMinValueWhenGivenTwoZeros() {
+    func testMinimumOfTwoReturnsMinValueWhenGivenTwoZeros() {
         XCTAssertEqual(minimumOfTwo(0, 0), 0)
     }
 
-    /// Test case for situation with input of two minimum representable integer values.
-    func testFindMinValueReturnsMinValueWhenGivenTwoIntMinNumbers() {
+    func testMinimumOfTwoReturnsMinValueWhenGivenTwoIntMinNumbers() {
         XCTAssertEqual(minimumOfTwo(Int.min, Int.min), Int.min)
     }
 }
 
 MinimumOfTwoTests.defaultTestSuite.run()
+
+// MARK: - Choose max between 2 Int
+func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
+    (number1 > number2) ? number1 : number2
+}
+assert(maximumOfTwo(1, 2) == 2)
+assert(maximumOfTwo(-2, 2) == 2)
+assert(maximumOfTwo(0, 0) == 0)
+assert(maximumOfTwo(Int.max, Int.max) == Int.max)
 
 // MARK: - Choose min between 3 Int
 func minimumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {

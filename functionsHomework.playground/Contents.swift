@@ -13,40 +13,32 @@ assert(minimumOfTwo(Int.min, Int.min) == Int.min)
 // MARK: - Choose max between 2 Int
 
 /**
-    This function chooses maximum value between two Int.
+ Returns the greater value of two integer numbers.
  
-    You can find maximum value of Int from input two Int values by calling this function.
- 
-    - Parameter number1: Int value.
-    - Parameter number2: Int value.
- 
-    - Returns: Returns maximum Int value from input of two Int values. In case when function have same values on the input, number2 is returned.
- 
-    */
+ You can find maximum value of Int from input two Int values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+ - Returns: The greater of two given integer values. If the values are equal, returns the second one.
+*/
 func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 > number2) ? number1 : number2
 }
 
-maximumOfTwo(2, 3)
-
 class MaximumOfTwoTests: XCTestCase {
-    /// Test case for situation with input of two positive Int values.
-    func testFindMaxValueReturnsMaxValueWhenGivenTwoPositiveNumbers() {
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoPositiveNumbers() {
         XCTAssertEqual(maximumOfTwo(1, 2), 2)
     }
 
-    /// Test case for situation with input of one positive and one negative Int value.
-    func testFindMaxValueReturnsMaxValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
+    func testMaximumOfTwoReturnsMaxValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
         XCTAssertEqual(maximumOfTwo(-2, 2), 2)
     }
 
-    /// Test case for situation with input of two zero values.
-    func testFindMaxValueReturnsMaxValueWhenGivenTwoZeros() {
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoZeros() {
         XCTAssertEqual(maximumOfTwo(0, 0), 0)
     }
 
-    /// Test case for situation with input of two minimum representable integer values.
-    func testFindMaxValueReturnsMaxValueWhenGivenTwoIntMaxNumbers() {
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoIntMaxNumbers() {
         XCTAssertEqual(maximumOfTwo(Int.max, Int.max), Int.max)
     }
 }
@@ -56,40 +48,33 @@ MaximumOfTwoTests.defaultTestSuite.run()
 // MARK: - Choose min between 3 Int
 
 /**
-    This function chooses minimum value between three Int.
+ Returns the lesser value of three integer numbers.
  
-    You can find minimum value of Int from input three Int values by calling this function.
- 
-    You can find minimum
-    - Parameter number1: Int value.
-    - Parameter number2: Int value.
-    - Parameter number3: Int value.
- 
-    - Returns: Returns minimum Int value from input of three Int values. In case when function have same values on the input, number2 is returned.
- 
-    */
+ You can find minimum value of Int from input three Int values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+    - number3: The third value to compare.
+ - Returns: The lesser of three given integer values. If the values are equal, returns the second one.
+*/
 func minimumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     minimumOfTwo(number3, minimumOfTwo(number1, number2))
 }
 
 class MinimumOfThreeTests: XCTestCase {
-    /// Test case for situation with input of three positive Int values.
-    func testFindMinValueReturnsMinValueWhenGivenThreePositiveNumbers() {
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreePositiveNumbers() {
         XCTAssertEqual(minimumOfThree(1, 2, 3), 1)
     }
 
-    /// Test case for situation with input of one positive and one negative and one zero Int value.
-    func testFindMinValueReturnsMinValueWhenGivenThreeDiffernetNumbers() {
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreeDiffernetNumbers() {
         XCTAssertEqual(minimumOfThree(-6, 6, 0), -6)
     }
 
-    /// Test case for situation with input of two zero values and one positive Int value.
-    func testFindMinValueReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
+    func testMinimumOfThreeReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
         XCTAssertEqual(minimumOfThree(0, 0, 1), 0)
     }
 
-    /// Test case for situation with input of three zero values.
-    func testFindMinValueReturnsMinValueWhenGivenThreeZeros() {
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreeZeros() {
         XCTAssertEqual(minimumOfThree(0, 0, 0), 0)
     }
 }
@@ -99,39 +84,33 @@ MinimumOfThreeTests.defaultTestSuite.run()
 // MARK: - Choose max between 3 Int
 
 /**
-    This function chooses maximum value between three Int.
+ Returns the greater value of three integer numbers.
  
-    You can find maximum value of Int from input three Int values by calling this function.
- 
-    - Parameter number1: Int value.
-    - Parameter number2: Int value.
-    - Parameter number3: Int value.
- 
-    - Returns: Returns maximum Int value from input of three Int values. In case when function have same values on the input, number2 is returned.
- 
-    */
+ You can find maximum value of Int from input three Int values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+    - number3: The third value to compare.
+ - Returns: The greater of three given integer values. If the values are equal, returns the second one.
+*/
 func maximumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     maximumOfTwo(number3, maximumOfTwo(number1, number2))
 }
 
 class MaximumOfThreeTests: XCTestCase {
-    /// Test case for situation with input of three positive Int values.
-    func testFindMinValueReturnsMinValueWhenGivenThreePositiveNumbers() {
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreePositiveNumbers() {
         XCTAssertEqual(maximumOfThree(1, 2, 3), 3)
     }
 
-    /// Test case for situation with input of one positive and one negative and one zero Int value.
-    func testFindMinValueReturnsMinValueWhenGivenThreeDiffernetNumbers() {
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreeDiffernetNumbers() {
         XCTAssertEqual(maximumOfThree(-6, 6, 0), 6)
     }
 
-    /// Test case for situation with input of two zero values and one positive Int value.
-    func testFindMinValueReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
+    func testMaximumOfThreeReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
         XCTAssertEqual(maximumOfThree(0, 0, 1), 1)
     }
 
-    /// Test case for situation with input of three zero values.
-    func testFindMinValueReturnsMinValueWhenGivenThreeZeros() {
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreeZeros() {
         XCTAssertEqual(maximumOfThree(0, 0, 0), 0)
     }
 }

@@ -9,9 +9,7 @@ import XCTest
  - Parameters:
     - number1: The first value to compare.
     - number2: The second value to compare.
- 
  - Returns: The lesser of two given integer values. If the values are equal, returns the second one.
- 
 */
 func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 < number2) ? number1 : number2

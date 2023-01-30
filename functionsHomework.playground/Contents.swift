@@ -21,7 +21,7 @@ class MinimumOfTwoTests: XCTestCase {
         XCTAssertEqual(minimumOfTwo(1, 2), 1)
     }
 
-    func testMinimumOfTwoReturnsMinValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
+    func testMinimumOfTwoReturnsMinValueWhenGivenOneNegativeAndOnePositiveNumber() {
         XCTAssertEqual(minimumOfTwo(-2, 2), -2)
     }
 

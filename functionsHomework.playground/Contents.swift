@@ -45,7 +45,7 @@ assert(maximumOfThree(0, 0, 0) == 0)
 /**
  Returns the lesser value from array of Int values.
  
- You can find minimum value of Int from input array of Int values by calling this function.
+ You can find minimum value among array of integer values by calling this function.
  - Parameter array: sequence of values to compare.
  - Returns: The lesser Int value from input array of Int values or nil if the no elements in array.
  - Complexity: O(N) where N is size of input array.
@@ -63,23 +63,23 @@ func minimumNumberInArrayOfInt(_ array: [Int]) -> Int? {
 }
 
 class MinimumNumberInArrayOfIntTests: XCTestCase {
-    func testMinimumNumberInArrayOfIntReturnsMinValueWhenGivenArrayOfPositiveInt() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayOfPositiveInt() {
         XCTAssertEqual(minimumNumberInArrayOfInt([3, 2, 1]), 1)
     }
 
-    func testMinimumNumberInArrayOfIntReturnsMinValueWhenGivenNil() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(minimumNumberInArrayOfInt([]), nil)
     }
 
-    func testMinimumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
         XCTAssertEqual(minimumNumberInArrayOfInt([2]), 2)
     }
 
-    func testMinimumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithThreeZeros() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayWithThreeZeros() {
         XCTAssertEqual(minimumNumberInArrayOfInt([0, 0, 0]), 0)
     }
 
-    func testMinimumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
         XCTAssertEqual(minimumNumberInArrayOfInt([-2, 2]), -2)
     }
 }
@@ -91,7 +91,7 @@ MinimumNumberInArrayOfIntTests.defaultTestSuite.run()
 /**
  Returns the greater value from array of Int values.
  
- You can find maximum value of Int from input array of Int values by calling this function.
+ You can find maximum value among array of integer values by calling this function.
  - Parameter array: sequence of values to compare.
  - Returns: The greater Int value from input array of Int values or nil if the no elements in array.
  - Complexity: O(N) where N is size of input array.
@@ -109,23 +109,23 @@ func maximumNumberInArrayOfInt(_ array: [Int]) -> Int? {
 }
 
 class MaximumNumberInArrayOfIntTests: XCTestCase {
-    func testMaximumNumberInArrayOfIntReturnsMinValueWhenGivenArrayOfPositiveInt() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayOfPositiveInt() {
         XCTAssertEqual(maximumNumberInArrayOfInt([3, 2, 1]), 3)
     }
 
-    func testMaximumNumberInArrayOfIntReturnsMinValueWhenGivenNil() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(maximumNumberInArrayOfInt([]), nil)
     }
 
-    func testMaximumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayWithOnePositiveNumber() {
         XCTAssertEqual(maximumNumberInArrayOfInt([2]), 2)
     }
 
-    func testMaximumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithThreeZeros() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayWithThreeZeros() {
         XCTAssertEqual(maximumNumberInArrayOfInt([0, 0, 0]), 0)
     }
 
-    func testFMaximumNumberInArrayOfIntReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
+    func testFMaximumNumberInArrayReturnsMinValueWhenGivenArrayWithPositiveAndNegativeValue() {
         XCTAssertEqual(maximumNumberInArrayOfInt([-2, 2]), 2)
     }
 }
@@ -137,7 +137,7 @@ MaximumNumberInArrayOfIntTests.defaultTestSuite.run()
 /**
  Returns the lesser value from array of Double values.
  
- You can find minimum value of Double from input array of Double values by calling this function.
+ You can find minimum value among array of double values by calling this function.
  - Parameter array: sequence of values to compare.
  - Returns: The lesser Double value from input array of Double values or nil if the no elements in array.
  - Complexity: O(N) where N is size of input array.
@@ -157,27 +157,27 @@ func minimumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
 }
 
 class MinimumNumberInArrayOfDoubleTests: XCTestCase {
-    func testMinimumNumberInArrayOfDoubleReturnsMinValueWhenGiveArrayOfTwoPositiveDoublesAndOneIntValues() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGiveArrayOfTwoPositiveDoublesAndOneIntValues() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([3.1, 3.2, 4]), 3.1)
     }
 
-    func testMinimumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([3.1, 3.2, 4.4]), 3.1)
     }
 
-    func testMinimumNumberInArrayOfDoubleReturnsMinValueWhenGivenNil() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([]), nil)
     }
 
-    func testMinimumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([0, 0, 0]), 0)
     }
 
-    func testMinimumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
+    func testMinimumNumberInArrayReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([2.1]), 2.1)
     }
 
-    func testMinimumNumberInArrayOfDoubleMinValueWhenGivenArrayOfThreePositiveInt() {
+    func testMinimumNumberInArrayMinValueWhenGivenArrayOfThreePositiveInt() {
         XCTAssertEqual(minimumNumberInArrayOfDouble([3, 4, 5]), 3)
     }
 }
@@ -189,7 +189,7 @@ MinimumNumberInArrayOfDoubleTests.defaultTestSuite.run()
 /**
  Returns the greater value from array of Double values.
  
- You can find maximum value of Double from input array of Double values by calling this function.
+ You can find maximum value among array of double values by calling this function.
  - Parameter array: sequence of values to compare.
  - Returns: The greater Double value from input array of Double values or nil if the no elements in array.
  - Complexity: O(N) where N is size of input array.
@@ -209,27 +209,27 @@ func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
 }
 
 class MaximumNumberInArrayOfDoubleTests: XCTestCase {
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayOfTwoPositiveDoublesAndOneIntValues() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayOfTwoPositiveDoublesAndOneIntValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3.1, 3.2, 4]), 3.1)
     }
 
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayOfThreePositiveDoubleValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3.1, 3.2, 4.4]), 3.1)
     }
 
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenNil() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenNil() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([]), nil)
     }
 
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayWithThreeZeroValues() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([0, 0, 0]), 0)
     }
 
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayWithOnePositiveDoubleValue() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([2.1]), 2.1)
     }
 
-    func testMaximumNumberInArrayOfDoubleReturnsMinValueWhenGivenArrayOfThreePositiveInt() {
+    func testMaximumNumberInArrayReturnsMinValueWhenGivenArrayOfThreePositiveInt() {
         XCTAssertEqual(maximumNumberInArrayOfDouble([3, 4, 5]), 3)
     }
 }

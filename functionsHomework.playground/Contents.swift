@@ -1,6 +1,7 @@
 import XCTest
 
 // MARK: - Choose min between 2 Int
+
 func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 < number2) ? number1 : number2
 }
@@ -11,6 +12,7 @@ assert(minimumOfTwo(0, 0) == 0)
 assert(minimumOfTwo(Int.min, Int.min) == Int.min)
 
 // MARK: - Choose max between 2 Int
+
 func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 > number2) ? number1 : number2
 }
@@ -21,6 +23,7 @@ assert(maximumOfTwo(0, 0) == 0)
 assert(maximumOfTwo(Int.max, Int.max) == Int.max)
 
 // MARK: - Choose min between 3 Int
+
 func minimumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     minimumOfTwo(number3, minimumOfTwo(number1, number2))
 }
@@ -31,6 +34,7 @@ assert(minimumOfThree(0, 0, 1) == 0)
 assert(minimumOfThree(0, 0, 0) == 0)
 
 // MARK: - Choose max between 3 Int
+
 func maximumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     maximumOfTwo(number3, maximumOfTwo(number1, number2))
 }

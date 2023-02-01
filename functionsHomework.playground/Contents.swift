@@ -1,6 +1,7 @@
 import XCTest
 
 // MARK: - Choose min between 2 Int
+
 func minimumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 < number2) ? number1 : number2
 }
@@ -15,7 +16,7 @@ assert(minimumOfTwo(Int.min, Int.min) == Int.min)
 /**
  Returns the greater value of two integer numbers.
  
- You can find maximum value of Int from input two Int values by calling this function.
+ You can find maximum value among two integer values by calling this function.
  - Parameters:
     - number1: The first value to compare.
     - number2: The second value to compare.
@@ -50,7 +51,7 @@ MaximumOfTwoTests.defaultTestSuite.run()
 /**
  Returns the lesser value of three integer numbers.
  
- You can find minimum value of Int from input three Int values by calling this function.
+ You can find minimum value among three integer values by calling this function.
  - Parameters:
     - number1: The first value to compare.
     - number2: The second value to compare.
@@ -86,7 +87,7 @@ MinimumOfThreeTests.defaultTestSuite.run()
 /**
  Returns the greater value of three integer numbers.
  
- You can find maximum value of Int from input three Int values by calling this function.
+ You can find maximum value among three integer values by calling this function.
  - Parameters:
     - number1: The first value to compare.
     - number2: The second value to compare.
@@ -118,6 +119,7 @@ class MaximumOfThreeTests: XCTestCase {
 MaximumOfThreeTests.defaultTestSuite.run()
 
 // MARK: - Find min in array of Ints
+
 func minimumNumberInArrayOfInt(_ array: [Int]) -> Int? {
     guard var minimumNumber = array.first else {
         return nil
@@ -137,6 +139,7 @@ assert(minimumNumberInArrayOfInt([0, 0, 0]) == 0)
 assert(minimumNumberInArrayOfInt([-2, 2]) == -2)
 
 // MARK: - Find max in array of Ints
+
 func maximumNumberInArrayOfInt(_ array: [Int]) -> Int? {
     guard var maximumNumber = array.first else {
         return nil
@@ -156,6 +159,7 @@ assert(maximumNumberInArrayOfInt([0, 0, 0]) == 0)
 assert(maximumNumberInArrayOfInt([-2, 2]) == 2)
 
 // MARK: - Find min in array of Doubles
+
 func minimumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
     guard var minimumNumber = array.first else {
         return nil
@@ -179,6 +183,7 @@ assert(minimumNumberInArrayOfDouble([0, 0, 0]) == 0)
 assert(minimumNumberInArrayOfDouble([3, 4, 5]) == 3)
 
 // MARK: - Find max in array of Doubles
+
 func maximumNumberInArrayOfDouble(_ array: [Double]) -> Double? {
     guard var maximumNumber = array.first else {
         return nil

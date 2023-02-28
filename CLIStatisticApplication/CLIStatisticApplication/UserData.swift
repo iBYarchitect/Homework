@@ -1,2 +1,1 @@
-struct UserData {
-}
+struct UserData {}

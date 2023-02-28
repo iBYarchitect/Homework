@@ -1,2 +1,1 @@
-struct Parser {
-}
+struct Parser {}

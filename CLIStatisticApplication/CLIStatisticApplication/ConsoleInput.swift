@@ -1,2 +1,1 @@
-struct ConsoleInput {
-}
+struct ConsoleInput {}

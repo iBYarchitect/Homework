@@ -1,2 +1,1 @@
-enum SupprotedCommands {
-}
+enum SupprotedCommands {}

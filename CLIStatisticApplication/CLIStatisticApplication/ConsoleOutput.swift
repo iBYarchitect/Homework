@@ -1,2 +1,1 @@
-struct ConsoleOutput {
-}
+struct ConsoleOutput {}

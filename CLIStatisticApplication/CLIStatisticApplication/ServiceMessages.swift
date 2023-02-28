@@ -1,2 +1,1 @@
-struct ServiceMessages {
-}
+struct ServiceMessages {}

@@ -10,6 +10,7 @@
 		366C28C829AD0E3F0079DDBB /* ConsoleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */; };
 		369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014729ADFAF40047FC5A /* ConsoleOutput.swift */; };
 		369F014E29ADFC210047FC5A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014D29ADFC210047FC5A /* Parser.swift */; };
+		369F015029ADFC720047FC5A /* CoreLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014F29ADFC720047FC5A /* CoreLogic.swift */; };
 		36DFC5C6298E6E8A003DE6A5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFC5C5298E6E8A003DE6A5 /* main.swift */; };
 		36E4DAD0299FD4B60072693C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4DACF299FD4B60072693C /* Application.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleInput.swift; sourceTree = "<group>"; };
 		369F014729ADFAF40047FC5A /* ConsoleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleOutput.swift; sourceTree = "<group>"; };
 		369F014D29ADFC210047FC5A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		369F014F29ADFC720047FC5A /* CoreLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLogic.swift; sourceTree = "<group>"; };
 		36DFC5C2298E6E8A003DE6A5 /* CLIStatisticApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIStatisticApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DFC5C5298E6E8A003DE6A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		36E4DACF299FD4B60072693C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */,
 				369F014729ADFAF40047FC5A /* ConsoleOutput.swift */,
 				369F014D29ADFC210047FC5A /* Parser.swift */,
+				369F014F29ADFC720047FC5A /* CoreLogic.swift */,
 			);
 			path = CLIStatisticApplication;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				369F014E29ADFC210047FC5A /* Parser.swift in Sources */,
 				369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */,
 				36DFC5C6298E6E8A003DE6A5 /* main.swift in Sources */,
+				369F015029ADFC720047FC5A /* CoreLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 struct Application {
-    func run() {
+    static func run() {
         print("Hello user, this is CLIStatisticApplication!")
     }
 }

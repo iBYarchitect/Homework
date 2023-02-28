@@ -1,1 +1,1 @@
-Application().run()
+Application.run()

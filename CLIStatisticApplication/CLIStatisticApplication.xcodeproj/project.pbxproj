@@ -11,7 +11,6 @@
 		369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014729ADFAF40047FC5A /* ConsoleOutput.swift */; };
 		369F014E29ADFC210047FC5A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014D29ADFC210047FC5A /* Parser.swift */; };
 		369F015029ADFC720047FC5A /* CoreLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014F29ADFC720047FC5A /* CoreLogic.swift */; };
-		369F015229ADFD7E0047FC5A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015129ADFD7E0047FC5A /* UserData.swift */; };
 		369F015429ADFEB70047FC5A /* ParsedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015329ADFEB70047FC5A /* ParsedData.swift */; };
 		369F015629ADFF3D0047FC5A /* SupportedCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015529ADFF3D0047FC5A /* SupportedCommands.swift */; };
 		369F015829AE03780047FC5A /* ServiceMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015729AE03780047FC5A /* ServiceMessages.swift */; };
@@ -36,7 +35,6 @@
 		369F014729ADFAF40047FC5A /* ConsoleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleOutput.swift; sourceTree = "<group>"; };
 		369F014D29ADFC210047FC5A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		369F014F29ADFC720047FC5A /* CoreLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLogic.swift; sourceTree = "<group>"; };
-		369F015129ADFD7E0047FC5A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		369F015329ADFEB70047FC5A /* ParsedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedData.swift; sourceTree = "<group>"; };
 		369F015529ADFF3D0047FC5A /* SupportedCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCommands.swift; sourceTree = "<group>"; };
 		369F015729AE03780047FC5A /* ServiceMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMessages.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				369F015929B0AF840047FC5A /* Application */,
 				369F015C29B0B0890047FC5A /* ArgumentParser */,
 				369F015A29B0AFC30047FC5A /* Core */,
-				369F015129ADFD7E0047FC5A /* UserData.swift */,
 				369F015D29B0B0DC0047FC5A /* ConsoleIO */,
 			);
 			path = CLIStatisticApplication;
@@ -225,7 +222,6 @@
 				369F015629ADFF3D0047FC5A /* SupportedCommands.swift in Sources */,
 				366C28C829AD0E3F0079DDBB /* ConsoleInput.swift in Sources */,
 				36E4DAD0299FD4B60072693C /* Application.swift in Sources */,
-				369F015229ADFD7E0047FC5A /* UserData.swift in Sources */,
 				369F014E29ADFC210047FC5A /* Parser.swift in Sources */,
 				369F015429ADFEB70047FC5A /* ParsedData.swift in Sources */,
 				369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */,

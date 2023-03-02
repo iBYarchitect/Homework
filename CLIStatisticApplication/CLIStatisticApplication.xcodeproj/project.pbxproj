@@ -56,6 +56,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		369F015929B0AF840047FC5A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				36E4DACF299FD4B60072693C /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		369F015A29B0AFC30047FC5A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				369F014F29ADFC720047FC5A /* CoreLogic.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		369F015C29B0B0890047FC5A /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				369F015329ADFEB70047FC5A /* ParsedData.swift */,
+				369F014D29ADFC210047FC5A /* Parser.swift */,
+				369F015529ADFF3D0047FC5A /* SupportedCommands.swift */,
+			);
+			path = ArgumentParser;
+			sourceTree = "<group>";
+		};
+		369F015D29B0B0DC0047FC5A /* ConsoleIO */ = {
+			isa = PBXGroup;
+			children = (
+				366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */,
+				369F014729ADFAF40047FC5A /* ConsoleOutput.swift */,
+				369F015729AE03780047FC5A /* ServiceMessages.swift */,
+			);
+			path = ConsoleIO;
+			sourceTree = "<group>";
+		};
 		36DFC5B9298E6E8A003DE6A5 = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				36DFC5C5298E6E8A003DE6A5 /* main.swift */,
-				36E4DACF299FD4B60072693C /* Application.swift */,
-				366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */,
-				369F014D29ADFC210047FC5A /* Parser.swift */,
-				369F015329ADFEB70047FC5A /* ParsedData.swift */,
-				369F014F29ADFC720047FC5A /* CoreLogic.swift */,
+				369F015929B0AF840047FC5A /* Application */,
+				369F015C29B0B0890047FC5A /* ArgumentParser */,
+				369F015A29B0AFC30047FC5A /* Core */,
 				369F015129ADFD7E0047FC5A /* UserData.swift */,
-				369F015529ADFF3D0047FC5A /* SupportedCommands.swift */,
-				369F015729AE03780047FC5A /* ServiceMessages.swift */,
-				369F014729ADFAF40047FC5A /* ConsoleOutput.swift */,
+				369F015D29B0B0DC0047FC5A /* ConsoleIO */,
 			);
 			path = CLIStatisticApplication;
 			sourceTree = "<group>";

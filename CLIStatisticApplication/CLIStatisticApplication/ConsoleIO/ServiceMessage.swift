@@ -1,4 +1,4 @@
 /**
- Contain typical messages as error or help which uses in console output.
+ Contains different types of messages which uses in console output.
  */
 struct ServiceMessage {}

@@ -1,4 +1,4 @@
 /**
- Represents an object that can print output to the shell/console.
+ Object that can print output to the shell/console.
  */
 struct ConsoleOutput {}

@@ -1,9 +1,9 @@
 /**
- A model representing the execution of the structure of the application.
+ Encapsulates the instance of the application and manages the execution flow.
  */
 struct Application {
     /**
-     ToDo
+     Method that executes the application.
      */
     static func run() {
         print("Hello user, this is CLIStatisticApplication!")

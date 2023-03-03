@@ -1,4 +1,4 @@
 /**
- A model representing the method of reading data from a shell.
+ Represents an object that can read input from the shell/console.
  */
 struct ConsoleInput {}

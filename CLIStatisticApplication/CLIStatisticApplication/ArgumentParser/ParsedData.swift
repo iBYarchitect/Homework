@@ -1,4 +1,4 @@
 /**
- A model representing the result of parsing.
+ Successfully parsed data.
  */
 struct ParsedData {}

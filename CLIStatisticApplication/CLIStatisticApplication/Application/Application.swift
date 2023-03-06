@@ -21,7 +21,7 @@ struct Application {
                     ConsoleOutput().printToShell(result)
                 }
             case SupportedCommand.help.rawValue:
-                ConsoleOutput().printToShell(ServiceMessages().help)
+                ConsoleOutput().printToShell(ServiceMessage.help)
             default:
                 ConsoleOutput().printToShell("Error: unknown command in interactive mode, type '--help'")
             }
@@ -38,7 +38,7 @@ struct Application {
                     ConsoleOutput().printToShell(result)
                 }
             case SupportedCommand.help.rawValue:
-                ConsoleOutput().printToShell(ServiceMessages().help)
+                ConsoleOutput().printToShell(ServiceMessage.help)
             default:
                 let error = "error from App.run.switch"
                 ConsoleOutput().printToShell(error)

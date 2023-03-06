@@ -1,1 +1,1 @@
-print("Hello, from CLIStatisticApplication!")
+Application.run()

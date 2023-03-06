@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366C28C829AD0E3F0079DDBB /* ConsoleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */; };
+		369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014729ADFAF40047FC5A /* ConsoleOutput.swift */; };
+		369F014E29ADFC210047FC5A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014D29ADFC210047FC5A /* Parser.swift */; };
+		369F015029ADFC720047FC5A /* CoreLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F014F29ADFC720047FC5A /* CoreLogic.swift */; };
+		369F015429ADFEB70047FC5A /* ParsedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015329ADFEB70047FC5A /* ParsedData.swift */; };
+		369F015629ADFF3D0047FC5A /* SupportedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015529ADFF3D0047FC5A /* SupportedCommand.swift */; };
+		369F015829AE03780047FC5A /* ServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F015729AE03780047FC5A /* ServiceMessage.swift */; };
 		36DFC5C6298E6E8A003DE6A5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFC5C5298E6E8A003DE6A5 /* main.swift */; };
+		36E4DAD0299FD4B60072693C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4DACF299FD4B60072693C /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleInput.swift; sourceTree = "<group>"; };
+		369F014729ADFAF40047FC5A /* ConsoleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleOutput.swift; sourceTree = "<group>"; };
+		369F014D29ADFC210047FC5A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		369F014F29ADFC720047FC5A /* CoreLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLogic.swift; sourceTree = "<group>"; };
+		369F015329ADFEB70047FC5A /* ParsedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedData.swift; sourceTree = "<group>"; };
+		369F015529ADFF3D0047FC5A /* SupportedCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCommand.swift; sourceTree = "<group>"; };
+		369F015729AE03780047FC5A /* ServiceMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMessage.swift; sourceTree = "<group>"; };
 		36DFC5C2298E6E8A003DE6A5 /* CLIStatisticApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIStatisticApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DFC5C5298E6E8A003DE6A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		36E4DACF299FD4B60072693C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		369F015929B0AF840047FC5A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				36E4DACF299FD4B60072693C /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		369F015A29B0AFC30047FC5A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				369F014F29ADFC720047FC5A /* CoreLogic.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		369F015C29B0B0890047FC5A /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				369F015329ADFEB70047FC5A /* ParsedData.swift */,
+				369F014D29ADFC210047FC5A /* Parser.swift */,
+				369F015529ADFF3D0047FC5A /* SupportedCommand.swift */,
+			);
+			path = ArgumentParser;
+			sourceTree = "<group>";
+		};
+		369F015D29B0B0DC0047FC5A /* ConsoleIO */ = {
+			isa = PBXGroup;
+			children = (
+				366C28C729AD0E3F0079DDBB /* ConsoleInput.swift */,
+				369F014729ADFAF40047FC5A /* ConsoleOutput.swift */,
+				369F015729AE03780047FC5A /* ServiceMessage.swift */,
+			);
+			path = ConsoleIO;
+			sourceTree = "<group>";
+		};
 		36DFC5B9298E6E8A003DE6A5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				36DFC5C5298E6E8A003DE6A5 /* main.swift */,
+				369F015929B0AF840047FC5A /* Application */,
+				369F015C29B0B0890047FC5A /* ArgumentParser */,
+				369F015A29B0AFC30047FC5A /* Core */,
+				369F015D29B0B0DC0047FC5A /* ConsoleIO */,
 			);
 			path = CLIStatisticApplication;
 			sourceTree = "<group>";
@@ -154,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint lint –config /Users/byarchitect/Homework/.swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -163,7 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369F015629ADFF3D0047FC5A /* SupportedCommand.swift in Sources */,
+				366C28C829AD0E3F0079DDBB /* ConsoleInput.swift in Sources */,
+				36E4DAD0299FD4B60072693C /* Application.swift in Sources */,
+				369F014E29ADFC210047FC5A /* Parser.swift in Sources */,
+				369F015429ADFEB70047FC5A /* ParsedData.swift in Sources */,
+				369F014829ADFAF40047FC5A /* ConsoleOutput.swift in Sources */,
+				369F015829AE03780047FC5A /* ServiceMessage.swift in Sources */,
 				36DFC5C6298E6E8A003DE6A5 /* main.swift in Sources */,
+				369F015029ADFC720047FC5A /* CoreLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

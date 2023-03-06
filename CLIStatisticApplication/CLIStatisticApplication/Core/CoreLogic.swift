@@ -1,4 +1,4 @@
 /**
- Object which provides methods for calculating the mean, median, and mode value of an array of integers from user input from a shell.
+ Object that implements the main logic of the application, especially the computations of various statistics for the user.
  */
 struct CoreLogic {}

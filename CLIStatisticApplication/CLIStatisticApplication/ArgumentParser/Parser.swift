@@ -22,7 +22,7 @@ struct Parser {
             result.data = convertStringArrayToIntArray(Array(userInput.dropFirst()))
             result.command = SupportedCommand.help
         default:
-            ConsoleOutput.printToShell(ServiceMessage.invalidInputError)
+            break
         }
 
         return result

@@ -6,11 +6,11 @@ struct Application {
      Method that executes the application.
      */
     static func run() {
-        ConsoleOutput().printToShell("Welcome to CLIStatisticApplication, this programm could calculate mean value from number input")
-        let inputFromConsole = ConsoleInput().readFromShell()
+        ConsoleOutput.printToShell(ServiceMessage.welcome)
+        let inputFromConsole = ConsoleInput.readFromShell()
 
         if inputFromConsole.isEmpty {
-            ConsoleOutput().printToShell("Type '--mean' to calculate mean value or '--help' to watch help")
+            ConsoleOutput.printToShell(ServiceMessage.interactiveMode)
 
             let input = readLine()
             switch input {
@@ -18,12 +18,12 @@ struct Application {
                 if let argument = readLine() {
                     let nums = argument.split(separator: " ").compactMap { Int($0) }
                     let result = String(CoreLogic.meanCalculation(nums))
-                    ConsoleOutput().printToShell(result)
+                    ConsoleOutput.printToShell(result)
                 }
             case SupportedCommand.help.rawValue:
-                ConsoleOutput().printToShell(ServiceMessage.help)
+                ConsoleOutput.printToShell(ServiceMessage.help)
             default:
-                ConsoleOutput().printToShell("Error: unknown command in interactive mode, type '--help'")
+                ConsoleOutput.printToShell(ServiceMessage.invalidInputError)
             }
         } else {
             let parser = Parser()
@@ -32,16 +32,16 @@ struct Application {
             switch parsedData.command.rawValue {
             case SupportedCommand.mean.rawValue:
                 if parsedData.data.isEmpty {
-                    ConsoleOutput().printToShell("Invalid argument")
+                    ConsoleOutput.printToShell(ServiceMessage.invalidInputError)
                 } else {
                     let result = String(CoreLogic.meanCalculation(parsedData.data))
-                    ConsoleOutput().printToShell(result)
+                    ConsoleOutput.printToShell(result)
                 }
             case SupportedCommand.help.rawValue:
-                ConsoleOutput().printToShell(ServiceMessage.help)
+                ConsoleOutput.printToShell(ServiceMessage.help)
             default:
                 let error = "error from App.run.switch"
-                ConsoleOutput().printToShell(error)
+                ConsoleOutput.printToShell(error)
             }
         }
     }

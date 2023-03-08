@@ -14,7 +14,7 @@ struct Parser {
             result.data = convertStringArrayToIntArray(Array(userInput.dropFirst()))
             result.command = SupportedCommand.help
         default:
-            ConsoleOutput().printToShell("Invalid command, please write --help to look at possible commands")
+            ConsoleOutput.printToShell(ServiceMessage.invalidInputError)
         }
 
         return result

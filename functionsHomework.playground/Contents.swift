@@ -13,36 +13,110 @@ assert(minimumOfTwo(Int.min, Int.min) == Int.min)
 
 // MARK: - Choose max between 2 Int
 
+/**
+ Returns the greater value of two integer numbers.
+ 
+ You can find maximum value among two integer values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+ - Returns: The greater of two given integer values. If the values are equal, returns the second one.
+*/
 func maximumOfTwo(_ number1: Int, _ number2: Int) -> Int {
     (number1 > number2) ? number1 : number2
 }
 
-assert(maximumOfTwo(1, 2) == 2)
-assert(maximumOfTwo(-2, 2) == 2)
-assert(maximumOfTwo(0, 0) == 0)
-assert(maximumOfTwo(Int.max, Int.max) == Int.max)
+class MaximumOfTwoTests: XCTestCase {
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoPositiveNumbers() {
+        XCTAssertEqual(maximumOfTwo(1, 2), 2)
+    }
+
+    func testMaximumOfTwoReturnsMaxValueWhenGivenOneNegavtiveAndOnePositiveNumber() {
+        XCTAssertEqual(maximumOfTwo(-2, 2), 2)
+    }
+
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoZeros() {
+        XCTAssertEqual(maximumOfTwo(0, 0), 0)
+    }
+
+    func testMaximumOfTwoReturnsMaxValueWhenGivenTwoIntMaxNumbers() {
+        XCTAssertEqual(maximumOfTwo(Int.max, Int.max), Int.max)
+    }
+}
+
+MaximumOfTwoTests.defaultTestSuite.run()
 
 // MARK: - Choose min between 3 Int
 
+/**
+ Returns the lesser value of three integer numbers.
+ 
+ You can find minimum value among three integer values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+    - number3: The third value to compare.
+ - Returns: The lesser of three given integer values. If the values are equal, returns the second one.
+*/
 func minimumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     minimumOfTwo(number3, minimumOfTwo(number1, number2))
 }
 
-assert(minimumOfThree(1, 2, 3) == 1)
-assert(minimumOfThree(-6, 6, 0) == -6)
-assert(minimumOfThree(0, 0, 1) == 0)
-assert(minimumOfThree(0, 0, 0) == 0)
+class MinimumOfThreeTests: XCTestCase {
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreePositiveNumbers() {
+        XCTAssertEqual(minimumOfThree(1, 2, 3), 1)
+    }
+
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreeDiffernetNumbers() {
+        XCTAssertEqual(minimumOfThree(-6, 6, 0), -6)
+    }
+
+    func testMinimumOfThreeReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
+        XCTAssertEqual(minimumOfThree(0, 0, 1), 0)
+    }
+
+    func testMinimumOfThreeReturnsMinValueWhenGivenThreeZeros() {
+        XCTAssertEqual(minimumOfThree(0, 0, 0), 0)
+    }
+}
+
+MinimumOfThreeTests.defaultTestSuite.run()
 
 // MARK: - Choose max between 3 Int
 
+/**
+ Returns the greater value of three integer numbers.
+ 
+ You can find maximum value among three integer values by calling this function.
+ - Parameters:
+    - number1: The first value to compare.
+    - number2: The second value to compare.
+    - number3: The third value to compare.
+ - Returns: The greater of three given integer values. If the values are equal, returns the second one.
+*/
 func maximumOfThree(_ number1: Int, _ number2: Int, _ number3: Int) -> Int {
     maximumOfTwo(number3, maximumOfTwo(number1, number2))
 }
 
-assert(maximumOfThree(1, 2, 3) == 3)
-assert(maximumOfThree(-6, 6, 0) == 6)
-assert(maximumOfThree(0, 0, 1) == 1)
-assert(maximumOfThree(0, 0, 0) == 0)
+class MaximumOfThreeTests: XCTestCase {
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreePositiveNumbers() {
+        XCTAssertEqual(maximumOfThree(1, 2, 3), 3)
+    }
+
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreeDiffernetNumbers() {
+        XCTAssertEqual(maximumOfThree(-6, 6, 0), 6)
+    }
+
+    func testMaximumOfThreeReturnsMinValueWhenGivenTwoZerosAndOnePositiveNumbers() {
+        XCTAssertEqual(maximumOfThree(0, 0, 1), 1)
+    }
+
+    func testMaximumOfThreeReturnsMinValueWhenGivenThreeZeros() {
+        XCTAssertEqual(maximumOfThree(0, 0, 0), 0)
+    }
+}
+
+MaximumOfThreeTests.defaultTestSuite.run()
 
 // MARK: - Find min in array of Ints
 

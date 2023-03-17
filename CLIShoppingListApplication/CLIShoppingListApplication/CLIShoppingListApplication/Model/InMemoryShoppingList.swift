@@ -1,3 +1,6 @@
+/**
+ This protocol defines a simple interface for managing a list of items that represents the groceries to be bought.
+ */
 protocol ShoppingList {
     /// Stores groceries to shop
     var shoppingList: [String] { get }

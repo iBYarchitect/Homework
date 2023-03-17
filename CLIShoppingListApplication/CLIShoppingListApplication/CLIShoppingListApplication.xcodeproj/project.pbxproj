@@ -15,6 +15,7 @@
 		3614347829C4B640008A9C82 /* ResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614347729C4B640008A9C82 /* ResultHandler.swift */; };
 		3614347A29C4B6E3008A9C82 /* SupportedCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614347929C4B6E3008A9C82 /* SupportedCommands.swift */; };
 		3614347C29C4B816008A9C82 /* RunLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614347B29C4B816008A9C82 /* RunLoop.swift */; };
+		3614347E29C4B8E4008A9C82 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614347D29C4B8E4008A9C82 /* Application.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		3614347729C4B640008A9C82 /* ResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHandler.swift; sourceTree = "<group>"; };
 		3614347929C4B6E3008A9C82 /* SupportedCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCommands.swift; sourceTree = "<group>"; };
 		3614347B29C4B816008A9C82 /* RunLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoop.swift; sourceTree = "<group>"; };
+		3614347D29C4B8E4008A9C82 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				3614347729C4B640008A9C82 /* ResultHandler.swift */,
 				3614347929C4B6E3008A9C82 /* SupportedCommands.swift */,
 				3614347B29C4B816008A9C82 /* RunLoop.swift */,
+				3614347D29C4B8E4008A9C82 /* Application.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3614347E29C4B8E4008A9C82 /* Application.swift in Sources */,
 				3614346E29C4A334008A9C82 /* UserConsole.swift in Sources */,
 				3614347C29C4B816008A9C82 /* RunLoop.swift in Sources */,
 				3614347029C4A46F008A9C82 /* InMemoryShoppingList.swift in Sources */,

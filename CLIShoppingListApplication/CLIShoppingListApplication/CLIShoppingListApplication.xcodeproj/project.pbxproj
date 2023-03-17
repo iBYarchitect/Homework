@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3614346B29C4A25B008A9C82 /* ConsoleIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614346A29C4A25B008A9C82 /* ConsoleIOWrapper.swift */; };
 		3614346E29C4A334008A9C82 /* UserConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614346D29C4A334008A9C82 /* UserConsole.swift */; };
+		3614347029C4A46F008A9C82 /* InMemoryShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614346F29C4A46F008A9C82 /* InMemoryShoppingList.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		3614346A29C4A25B008A9C82 /* ConsoleIOWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIOWrapper.swift; sourceTree = "<group>"; };
 		3614346D29C4A334008A9C82 /* UserConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConsole.swift; sourceTree = "<group>"; };
+		3614346F29C4A46F008A9C82 /* InMemoryShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryShoppingList.swift; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +53,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3614347129C4A477008A9C82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3614346F29C4A46F008A9C82 /* InMemoryShoppingList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		36BF64A929C25EC900B72826 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				36BF64B529C25ECA00B72826 /* main.swift */,
+				3614347129C4A477008A9C82 /* Model */,
 				3614346C29C4A2A1008A9C82 /* View */,
 			);
 			path = CLIShoppingListApplication;
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3614346E29C4A334008A9C82 /* UserConsole.swift in Sources */,
+				3614347029C4A46F008A9C82 /* InMemoryShoppingList.swift in Sources */,
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
 				3614346B29C4A25B008A9C82 /* ConsoleIOWrapper.swift in Sources */,
 			);

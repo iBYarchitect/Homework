@@ -1,5 +1,4 @@
 /**
- Object that repeats a loop of executable until an EXIT message is received,
- all actions of the application occur inside.
+ Object that repeats an application execution loop until an EXIT message is received.
  */
 struct RunLoop {}

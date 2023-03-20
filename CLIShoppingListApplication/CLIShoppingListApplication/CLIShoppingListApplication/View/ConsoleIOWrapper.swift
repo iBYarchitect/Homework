@@ -15,15 +15,15 @@ protocol ConsoleIOWrapper {
     func write(_ items: Any...)
 
     /**
-     Writes error message into STDERR.
+     Writes error message to the standard error (STDERR) output.
      - Parameter errorMessage: An error text message that should be written into STDERR.
      */
     func writeErrorLine(_ errorMessage: String)
 
     /**
-     This function writes an error message and a help message to the standard error (STDERR) output.
+     Writes an error message and a help message to the standard error (STDERR) output.
      The error message is prefixed with "ERROR: ". The help message is optional
-     and is written on a new line only if it is not empty.
+     and after it there is written on a new line.
 
      - Parameters:
        - errorMessage: An error text message that should be written into STDERR.

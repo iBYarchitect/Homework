@@ -1,46 +1,35 @@
 /**
- This protocol defines a simple interface for managing a list of items that represents the groceries to be bought.
+ Represent a dummy shopping list.
  */
-protocol ShoppingList {
-    /// Stores groceries to shop
-    var shoppingList: [String] { get }
-
-    /**
-     Adds the item in the end of the list.
-
-     - Parameter: item: Item to add into a `shoppingList`.
-     - Returns: `true` if the `item` was added into a `shoppingList`, otherwise `false`.
-     */
-    func add(_ item: String) -> Bool
-
-    /**
-     Removes the item from the list.
-
-     - Parameter item: Item to remove from a `shoppingList`.
-     - Returns: `true` if the `item` was removed from a `shoppingList`, otherwise `false`.
-     */
-    func remove(_ item: String) -> Bool
-
-    /**
-     Removes the item at specified index from the list.
-
-     - Parameter index: The position of the elemenmt in the `shoppingList` to remove.
-     - Returns: `true` if the item at `index` was removed from a `shoppingList`, otherwise `false`.
-     */
-    func remove(at index: Int) -> Bool
-}
-
-struct InMemory: ShoppingList {
+struct DummyGroceryList: ShoppingList {
     var shoppingList: [String]
-
+    
+    /**
+     A stub method to mock behavior of conforming to the protocol `ShoppingList`.
+     - Parameter item: Item to add into a `shoppingList`.
+     The `shoppingList` won't be modified upon the method's call.
+     - Returns: hardcore `true` value. The returned values does not depend on input data.
+     */
     func add(_: String) -> Bool {
         true
     }
-
+    
+    /**
+    A stub method to mock behavior of conforming to the protocol `ShoppingList`.
+    - Parameter item: Item to remove from a `shoppingList`.
+    The `shoppingList` won't be modified upon the method's call.
+    - Returns: hardcore `true` value. The returned values does not depend on input data.
+    */
     func remove(_: String) -> Bool {
         true
     }
 
+    /**
+    A stub method to mock behavior of conforming to the protocol `ShoppingList`.
+    - Parameter item: The position of the elemenmt in the `shoppingList` to remove.
+    The `shoppingList` won't be modified upon the method's call.
+    - Returns: hardcore `true` value. The returned values does not depend on input data.
+    */
     func remove(at _: Int) -> Bool {
         true
     }

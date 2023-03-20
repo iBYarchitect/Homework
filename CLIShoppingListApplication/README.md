@@ -2,8 +2,8 @@
 
 This is the application for macOS to work in CLI where you can store list of shopping, add and remove items, and view your current shopping list.
 
-[Scheme of application](https://katherineoelsner.com/)
-![Scheme image](https://raw.githubusercontent.com/iBYarchitect/Homework/hw4-readme-file-improvement/CLIShoppingListApplication/HW4%20scheme%20of%20application-2.jpg?token=GHSAT0AAAAAAB4HAUPTNADKHOQ3MLJOBP3AZAYYNQQ)
+[Scheme of application](https://miro.com/app/board/uXjVMd7ba5I=/)
+![Scheme image](https://raw.githubusercontent.com/iBYarchitect/Homework/hw4-readme-file-improvement/CLIShoppingListApplication/image.jpg?raw=true)
 
 ## Usage
 

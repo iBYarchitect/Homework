@@ -1,4 +1,4 @@
 /**
- Contains different types of messages which uses in UserConsole.
+ A message to use in UserConsole.
  */
-enum ServiceMessages {}
+enum ServiceMessage {}

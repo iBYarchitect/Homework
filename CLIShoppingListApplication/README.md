@@ -1,9 +1,9 @@
-# ShoppingListApplication
+# ShoppingList Application
 
 This is the application for macOS to work in CLI where you can store list of shopping, add and remove items, and view your current shopping list.
 
 [Scheme of application](https://miro.com/app/board/uXjVMd7ba5I=/)
-![Scheme image](./Images/Sheme-of-application-image.jpg)
+![Scheme image](./Images/Scheme-of-application-image.jpg)
 
 ## Usage
 

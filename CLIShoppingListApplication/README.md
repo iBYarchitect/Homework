@@ -11,12 +11,14 @@ The application allows the user to enter commands and execute actions. After lau
 
 ## Features
 
-- The max number of items in the list is 10.
-- The list cannot contain duplicate items.
+- User-friendly CLI interface: The app should have a clean and easy-to-use command-line interface that allows users to navigate and interact with the program easily.
+- Command prompt: The app should display a proper prompt to indicate to users that the program is waiting for a command.
+- Command processing: The app should process user commands and provide appropriate feedback based on the actions performed.
+- List display: The app should be able to show users a list of items in the grocery list.
+- Item addition: The app should allow users to add items to the grocery list, subject to a maximum limit of 10 items.
+- Item removal: The app should allow users to remove items from the grocery list.
+- Error handling: The app should display an error message if the user tries to add more than 10 items to the list or attempts to add a duplicate item to the list.
 
 ## Roadmap
 
-- Add functionality for the next commands help, add, remove, and show items from current shopping list.
-
-- Add tests for non-private methods.
-
+- Add functionality for the next commands help, add, remove, and show items from current shopping list and tests for non-private methods.

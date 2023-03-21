@@ -1,4 +1,2 @@
-/**
- A message to use in UserConsole.
- */
+/// Messages showing the user the success of the running command.
 enum ServiceMessage {}

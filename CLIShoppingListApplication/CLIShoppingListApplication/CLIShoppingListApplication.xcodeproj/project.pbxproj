@@ -19,6 +19,7 @@
 		3614348029C4BA8D008A9C82 /* ServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614347F29C4BA8D008A9C82 /* ServiceMessage.swift */; };
 		3614348229C4F105008A9C82 /* TextPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614348129C4F105008A9C82 /* TextPrefix.swift */; };
 		3614348429C87720008A9C82 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614348329C87720008A9C82 /* ShoppingList.swift */; };
+		3658C26929C9FE3B00D08C88 /* СommandDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658C26829C9FE3B00D08C88 /* СommandDescription.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		3614347F29C4BA8D008A9C82 /* ServiceMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMessage.swift; sourceTree = "<group>"; };
 		3614348129C4F105008A9C82 /* TextPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPrefix.swift; sourceTree = "<group>"; };
 		3614348329C87720008A9C82 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		3658C26829C9FE3B00D08C88 /* СommandDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СommandDescription.swift"; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				3614348129C4F105008A9C82 /* TextPrefix.swift */,
 				3614347929C4B6E3008A9C82 /* SupportedCommand.swift */,
 				3614347F29C4BA8D008A9C82 /* ServiceMessage.swift */,
+				3658C26829C9FE3B00D08C88 /* СommandDescription.swift */,
 			);
 			path = CLIShoppingListApplication;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
 				3614347A29C4B6E3008A9C82 /* SupportedCommand.swift in Sources */,
 				3614348229C4F105008A9C82 /* TextPrefix.swift in Sources */,
+				3658C26929C9FE3B00D08C88 /* СommandDescription.swift in Sources */,
 				3614348029C4BA8D008A9C82 /* ServiceMessage.swift in Sources */,
 				3614347829C4B640008A9C82 /* ResultHandler.swift in Sources */,
 				3614346B29C4A25B008A9C82 /* ConsoleIOWrapper.swift in Sources */,

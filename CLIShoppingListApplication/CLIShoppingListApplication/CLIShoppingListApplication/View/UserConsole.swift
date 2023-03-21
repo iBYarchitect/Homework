@@ -1,5 +1,9 @@
 import Darwin
 
+/**
+ Describes a type that enables console input/output operations.
+ It allows reading data from the standard input and writing to the standard output.
+ */
 struct UserConsole: ConsoleIOWrapper {
     func readLine() -> String {
         Swift.readLine() ?? ""

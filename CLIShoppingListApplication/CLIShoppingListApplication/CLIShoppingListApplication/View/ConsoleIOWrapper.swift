@@ -22,8 +22,8 @@ protocol ConsoleIOWrapper {
 
     /**
      Writes an error message and a help message to the standard error (STDERR) output.
-     The error message is prefixed with "ERROR: ". The help message is optional
-     and after it there is written on a new line.
+     The error message is prefixed with "ERROR: ". The error message is prefixed with "ERROR: ".
+     The help message is optional and the next text is written on a new line.
 
      - Parameters:
        - errorMessage: An error text message that should be written into STDERR.

@@ -1,4 +1,2 @@
-/**
- Commands supported by the application.
- */
+/// Commands supported by the application.
 enum SupportedCommand {}

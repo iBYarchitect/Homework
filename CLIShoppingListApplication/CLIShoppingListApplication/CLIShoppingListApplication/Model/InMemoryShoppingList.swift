@@ -3,7 +3,7 @@
  */
 struct DummyGroceryList: ShoppingList {
     var shoppingList: [String]
-    
+    // swiftformat:disable unusedArguments
     /**
      A stub method to mock behavior of conforming to the protocol `ShoppingList`.
      - Parameter item: Item to add into a `shoppingList`.
@@ -13,7 +13,7 @@ struct DummyGroceryList: ShoppingList {
     func add(_ item: String) -> Bool {
         true
     }
-    
+
     /**
      A stub method to mock behavior of conforming to the protocol `ShoppingList`.
      - Parameter item: Item to remove from a `shoppingList`.
@@ -23,7 +23,7 @@ struct DummyGroceryList: ShoppingList {
     func remove(_ item: String) -> Bool {
         true
     }
-    
+
     /**
      A stub method to mock behavior of conforming to the protocol `ShoppingList`.
      - Parameter index: The position of the element in the `shoppingList` to remove.

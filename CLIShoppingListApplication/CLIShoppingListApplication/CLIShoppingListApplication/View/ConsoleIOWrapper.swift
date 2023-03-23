@@ -1,10 +1,10 @@
 /**
- This protocol provides a wrapper for command-line I/O. Can read from the STDIN and write into STDOUT, STDERR.
+ This protocol provides a wrapper for command line I/O. Can read from the STDIN and write into STDOUT, STDERR.
  */
 protocol ConsoleIOWrapper {
     /**
      Reads the data from standard input through the end of the current line or until EOF is reached.
-     - Returns: String read from standard input. If data not provided, returns empty string.
+     - Returns: String read from standard input. If data is not provided, returns empty string.
      */
     func readLine() -> String
 

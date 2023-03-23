@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConsoleIOWrapper.swift; path = CLIShoppingListApplication/ConsoleIOWrapper.swift; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +43,7 @@
 		36BF64A929C25EC900B72826 = {
 			isa = PBXGroup;
 			children = (
+				364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */,
 				36BF64B429C25ECA00B72826 /* CLIShoppingListApplication */,
 				36BF64B329C25ECA00B72826 /* Products */,
 			);
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
+				364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

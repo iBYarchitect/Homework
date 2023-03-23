@@ -22,7 +22,7 @@ protocol ConsoleIOWrapper {
 
     /**
      Writes an error message to the standard error stream (STDERR), along with an optional help message.
-     Help message writes on a new line.
+     Help message writes on a new line. You can use an optional prefix before the body of the message.
 
      - Parameters:
          - errorMessage: A string representing the error message to be written to stderr.

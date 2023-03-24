@@ -1,4 +1,7 @@
 /**
  Command supported by the application.
  */
-enum SupportedCommand {}
+enum SupportedCommand: String {
+    case mean = "--mean"
+    case help = "--help"
+}

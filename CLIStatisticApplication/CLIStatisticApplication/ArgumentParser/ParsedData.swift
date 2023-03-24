@@ -1,4 +1,7 @@
 /**
  Successfully parsed data.
  */
-struct ParsedData {}
+struct ParsedData {
+    var command: SupportedCommand
+    var data: [Int]
+}

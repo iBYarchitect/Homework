@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */; };
+		364E167729CC47D200545E8D /* UserConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167629CC47D200545E8D /* UserConsole.swift */; };
+		364E167929CC482700545E8D /* TextPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167829CC482700545E8D /* TextPrefix.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIOWrapper.swift; sourceTree = "<group>"; };
+		364E167629CC47D200545E8D /* UserConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConsole.swift; sourceTree = "<group>"; };
+		364E167829CC482700545E8D /* TextPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPrefix.swift; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364E167A29CC496C00545E8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */,
+				364E167629CC47D200545E8D /* UserConsole.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		36BF64A929C25EC900B72826 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				36BF64B529C25ECA00B72826 /* main.swift */,
+				364E167A29CC496C00545E8D /* View */,
+				364E167829CC482700545E8D /* TextPrefix.swift */,
 			);
 			path = CLIShoppingListApplication;
 			sourceTree = "<group>";
@@ -163,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364E167729CC47D200545E8D /* UserConsole.swift in Sources */,
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
+				364E167929CC482700545E8D /* TextPrefix.swift in Sources */,
+				364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

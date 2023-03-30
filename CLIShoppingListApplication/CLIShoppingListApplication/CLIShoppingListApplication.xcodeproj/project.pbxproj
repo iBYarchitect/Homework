@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360DD98929D5A4FB006A9EC8 /* PromtMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DD98829D5A4FB006A9EC8 /* PromtMessage.swift */; };
+		360DD98B29D5A52C006A9EC8 /* SupportedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DD98A29D5A52C006A9EC8 /* SupportedCommand.swift */; };
 		364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */; };
 		364E167729CC47D200545E8D /* UserConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167629CC47D200545E8D /* UserConsole.swift */; };
 		364E167929CC482700545E8D /* TextPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167829CC482700545E8D /* TextPrefix.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		360DD98829D5A4FB006A9EC8 /* PromtMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromtMessage.swift; sourceTree = "<group>"; };
+		360DD98A29D5A52C006A9EC8 /* SupportedCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCommand.swift; sourceTree = "<group>"; };
 		364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIOWrapper.swift; sourceTree = "<group>"; };
 		364E167629CC47D200545E8D /* UserConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConsole.swift; sourceTree = "<group>"; };
 		364E167829CC482700545E8D /* TextPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPrefix.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				36BF64B529C25ECA00B72826 /* main.swift */,
 				364E167A29CC496C00545E8D /* View */,
 				364E167829CC482700545E8D /* TextPrefix.swift */,
+				360DD98829D5A4FB006A9EC8 /* PromtMessage.swift */,
+				360DD98A29D5A52C006A9EC8 /* SupportedCommand.swift */,
 			);
 			path = CLIShoppingListApplication;
 			sourceTree = "<group>";
@@ -180,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360DD98B29D5A52C006A9EC8 /* SupportedCommand.swift in Sources */,
 				364E167729CC47D200545E8D /* UserConsole.swift in Sources */,
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
+				360DD98929D5A4FB006A9EC8 /* PromtMessage.swift in Sources */,
 				364E167929CC482700545E8D /* TextPrefix.swift in Sources */,
 				364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */,
 			);

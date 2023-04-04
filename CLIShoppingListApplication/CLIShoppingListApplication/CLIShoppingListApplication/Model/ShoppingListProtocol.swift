@@ -1,5 +1,3 @@
-import Foundation
-
 /// Defines the interface for managing a list of items that represents the groceries list.
 protocol ShoppingList {
     /// Stores groceries to shop.

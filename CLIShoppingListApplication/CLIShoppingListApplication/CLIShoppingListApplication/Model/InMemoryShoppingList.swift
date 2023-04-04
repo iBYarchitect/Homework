@@ -20,7 +20,7 @@ class InMemoryShoppingList: ShoppingList {
      The `shoppingList` won't be modified upon the method's call.
      - Returns: hardcode `true` value. The returned values does not depend on input data.
      */
-    func remove(_ item: String) -> Bool {
+    func remove(_: String) -> Bool {
         true
     }
 
@@ -30,12 +30,12 @@ class InMemoryShoppingList: ShoppingList {
      The `shoppingList` won't be modified upon the method's call.
      - Returns: hardcode `true` value. The returned values does not depend on input data.
      */
-    func remove(at index: Int) -> Bool {
+    func remove(at _: Int) -> Bool {
         true
     }
-    
+
     // MARK: - Private interface
-    
+
     private(set) var shoppingList: [String] = []
     private let maxValue = 10
 }

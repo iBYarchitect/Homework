@@ -15,6 +15,8 @@
 		3670A56029DC97E500869720 /* ShoppingListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */; };
 		3670A56229DC986500869720 /* InMemoryShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56129DC986500869720 /* InMemoryShoppingList.swift */; };
 		3670A56C29DC995200869720 /* InMemoryShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56B29DC995200869720 /* InMemoryShoppingListTests.swift */; };
+		3670A57129DCA1C000869720 /* ShoppingListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */; };
+		3670A57229DCA1C200869720 /* InMemoryShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56129DC986500869720 /* InMemoryShoppingList.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -251,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3670A57229DCA1C200869720 /* InMemoryShoppingList.swift in Sources */,
 				3670A56C29DC995200869720 /* InMemoryShoppingListTests.swift in Sources */,
+				3670A57129DCA1C000869720 /* ShoppingListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,11 @@
 		364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */; };
 		364E167729CC47D200545E8D /* UserConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167629CC47D200545E8D /* UserConsole.swift */; };
 		364E167929CC482700545E8D /* TextPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364E167829CC482700545E8D /* TextPrefix.swift */; };
+		3670A56029DC97E500869720 /* ShoppingListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */; };
+		3670A56229DC986500869720 /* InMemoryShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56129DC986500869720 /* InMemoryShoppingList.swift */; };
+		3670A56C29DC995200869720 /* InMemoryShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56B29DC995200869720 /* InMemoryShoppingListTests.swift */; };
+		3670A57129DCA1C000869720 /* ShoppingListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */; };
+		3670A57229DCA1C200869720 /* InMemoryShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670A56129DC986500869720 /* InMemoryShoppingList.swift */; };
 		36BF64B629C25ECA00B72826 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF64B529C25ECA00B72826 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,11 +38,22 @@
 		364E167429CC477F00545E8D /* ConsoleIOWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIOWrapper.swift; sourceTree = "<group>"; };
 		364E167629CC47D200545E8D /* UserConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConsole.swift; sourceTree = "<group>"; };
 		364E167829CC482700545E8D /* TextPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPrefix.swift; sourceTree = "<group>"; };
+		3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListProtocol.swift; sourceTree = "<group>"; };
+		3670A56129DC986500869720 /* InMemoryShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryShoppingList.swift; sourceTree = "<group>"; };
+		3670A56929DC995200869720 /* CLIShoppingListApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLIShoppingListApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3670A56B29DC995200869720 /* InMemoryShoppingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryShoppingListTests.swift; sourceTree = "<group>"; };
 		36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLIShoppingListApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF64B529C25ECA00B72826 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3670A56629DC995200869720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36BF64AF29C25EC900B72826 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +73,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3670A55E29DC979200869720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3670A55F29DC97E500869720 /* ShoppingListProtocol.swift */,
+				3670A56129DC986500869720 /* InMemoryShoppingList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3670A56A29DC995200869720 /* CLIShoppingListApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				3670A56B29DC995200869720 /* InMemoryShoppingListTests.swift */,
+			);
+			path = CLIShoppingListApplicationTests;
+			sourceTree = "<group>";
+		};
 		36BF64A929C25EC900B72826 = {
 			isa = PBXGroup;
 			children = (
 				36BF64B429C25ECA00B72826 /* CLIShoppingListApplication */,
+				3670A56A29DC995200869720 /* CLIShoppingListApplicationTests */,
 				36BF64B329C25ECA00B72826 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				36BF64B229C25ECA00B72826 /* CLIShoppingListApplication */,
+				3670A56929DC995200869720 /* CLIShoppingListApplicationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +113,7 @@
 			children = (
 				36BF64B529C25ECA00B72826 /* main.swift */,
 				364E167A29CC496C00545E8D /* View */,
+				3670A55E29DC979200869720 /* Model */,
 				364E167829CC482700545E8D /* TextPrefix.swift */,
 				360DD98829D5A4FB006A9EC8 /* PromtMessage.swift */,
 				360DD98A29D5A52C006A9EC8 /* SupportedCommand.swift */,
@@ -88,6 +124,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3670A56829DC995200869720 /* CLIShoppingListApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3670A56D29DC995200869720 /* Build configuration list for PBXNativeTarget "CLIShoppingListApplicationTests" */;
+			buildPhases = (
+				3670A56529DC995200869720 /* Sources */,
+				3670A56629DC995200869720 /* Frameworks */,
+				3670A56729DC995200869720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLIShoppingListApplicationTests;
+			productName = CLIShoppingListApplicationTests;
+			productReference = 3670A56929DC995200869720 /* CLIShoppingListApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		36BF64B129C25EC900B72826 /* CLIShoppingListApplication */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36BF64B929C25ECA00B72826 /* Build configuration list for PBXNativeTarget "CLIShoppingListApplication" */;
@@ -114,9 +167,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					3670A56829DC995200869720 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					36BF64B129C25EC900B72826 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -136,9 +192,20 @@
 			projectRoot = "";
 			targets = (
 				36BF64B129C25EC900B72826 /* CLIShoppingListApplication */,
+				3670A56829DC995200869720 /* CLIShoppingListApplicationTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3670A56729DC995200869720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		36BF64BC29C2655600B72826 /* SwiftFormat */ = {
@@ -182,22 +249,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3670A56529DC995200869720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3670A57229DCA1C200869720 /* InMemoryShoppingList.swift in Sources */,
+				3670A56C29DC995200869720 /* InMemoryShoppingListTests.swift in Sources */,
+				3670A57129DCA1C000869720 /* ShoppingListProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36BF64AE29C25EC900B72826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				360DD98B29D5A52C006A9EC8 /* SupportedCommand.swift in Sources */,
+				3670A56229DC986500869720 /* InMemoryShoppingList.swift in Sources */,
 				364E167729CC47D200545E8D /* UserConsole.swift in Sources */,
 				36BF64B629C25ECA00B72826 /* main.swift in Sources */,
 				360DD98929D5A4FB006A9EC8 /* PromtMessage.swift in Sources */,
 				364E167929CC482700545E8D /* TextPrefix.swift in Sources */,
 				364E167529CC477F00545E8D /* ConsoleIOWrapper.swift in Sources */,
+				3670A56029DC97E500869720 /* ShoppingListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3670A56E29DC995200869720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexzavadskiy.CLIShoppingListApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3670A56F29DC995200869720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexzavadskiy.CLIShoppingListApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		36BF64B729C25ECA00B72826 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +443,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3670A56D29DC995200869720 /* Build configuration list for PBXNativeTarget "CLIShoppingListApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3670A56E29DC995200869720 /* Debug */,
+				3670A56F29DC995200869720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		36BF64AD29C25EC900B72826 /* Build configuration list for PBXProject "CLIShoppingListApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

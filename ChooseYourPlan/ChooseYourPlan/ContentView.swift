@@ -37,7 +37,7 @@ struct BoxView: View {
                     .fontWeight(.heavy)
                     .foregroundColor(priceColor)
                 Text(description)
-                    .font(.system(size: 20, design: .rounded))
+                    .font(.system(size: 18))
                     .fontWeight(.bold)
                     .foregroundColor(descriptionColor)
             }
@@ -47,7 +47,7 @@ struct BoxView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .background(overlayColor)
-                    .offset(y: 85)
+                    .offset(y: 90)
             }
         }
     }
@@ -99,7 +99,7 @@ struct ContentView: View {
                 )
                 .frame(maxWidth: .infinity)
             }
-            .padding(.bottom, 15)
+            .padding(.bottom, 10)
             
             BoxView(
                 title: "Team",
